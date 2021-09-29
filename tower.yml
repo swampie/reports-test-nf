@@ -1,0 +1,133 @@
+reports:
+
+   results/MultiQC Report.html:
+      display: "MultiQC Report"
+      mimeType: "text/html"
+
+   results/report.pdf:
+      display: "Pdf report"
+      mimeType: "application/pdf"
+
+   results/nfcore_chipseq110_samplesheet_test_full_6cols.csv:
+      display: "nfcore_chipseq110_samplesheet_test_full_6cols"
+      mimeType: "text/csv"
+
+   results/all_sites.fas:
+      display: ""
+      mimeType: "text"
+
+   results/baits.bed:
+      display: ""
+      mimeType: "text"
+
+   results/bin_depths_summary.tsv:
+      display: ""
+      mimeType: "text"
+
+   results/bin_summary.tsv:
+      display: ""
+      mimeType: "text"
+
+   results/CAPES_S7.log:
+      display: ""
+      mimeType: "text"
+
+   results/execution_trace_2021-07-29_07-12-59.txt:
+      display: ""
+      mimeType: "text"
+
+   results/genome.dict:
+      display: ""
+      mimeType: "text"
+
+   results/genome.fasta:
+      display: ""
+      mimeType: "text"
+
+   results/genome.fasta.fai:
+      display: ""
+      mimeType: "text"
+
+   results/genome.gff3:
+      display: ""
+      mimeType: "text"
+
+   results/genome.gtf:
+      display: ""
+      mimeType: "text"
+
+   results/genome.sizes:
+      display: ""
+      mimeType: "text"
+
+   results/kraken2_report.txt:
+      display: ""
+      mimeType: "text"
+
+   results/pipeline_dag_2021-07-29_07-12-59.svg:
+      display: ""
+      mimeType: "text"
+
+   results/proteome.fasta:
+      display: ""
+      mimeType: "text"
+
+   results/SPAdesHybrid-CAPES_S7-binDepths.heatmap.png:
+      display: ""
+      mimeType: "text"
+
+   results/taxonomy.krona.html:
+      display: ""
+      mimeType: "text"
+
+   results/test.baserecalibrator.table:
+      display: ""
+      mimeType: "text"
+
+   results/test.bed:
+      display: ""
+      mimeType: "text"
+
+   results/test.bedgraph:
+      display: ""
+      mimeType: "text"
+
+   results/test.bigwig:
+      display: ""
+      mimeType: "text"
+
+   results/test.paired_end.bam:
+      display: ""
+      mimeType: "text"
+
+   results/test.single_end.bam.readlist.txt:
+      display: ""
+      mimeType: "text"
+
+   results/test.vcf:
+      display: ""
+      mimeType: "text"
+
+   results/test.vcf.gz.tbi:
+      display: ""
+      mimeType: "text"
+
+   results/test2.targets.tsv.gz:
+      display: ""
+      mimeType: "text"
+
+   results/transcriptome.paf:
+      display: ""
+      mimeType: "text"
+
+   results/transposed_report.tex:
+      display: ""
+      mimeType: "text"
+
+   results/transposed_report.tsv:
+      display: ""
+      mimeType: "text"
+
+   results/transposed_report.txt:
+      display: ""
+      mimeType: "text"
