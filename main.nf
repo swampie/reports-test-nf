@@ -34,8 +34,7 @@ process PUBLISH_REPORTS {
     path(test2_targets_tsv_gz) from Channel.of("${projectDir}/resources/test2.targets.tsv.gz")
     path(transcriptome_paf) from Channel.of("${projectDir}/resources/transcriptome.paf")
     path(report_pdf) from Channel.of("${projectDir}/resources/report.pdf")
-
-
+    path(samplesheet_csv) from Channel.of("${projectDir}/resources/nfcore_chipseq110_samplesheet_test_full_6cols.csv")
 
 
     output:
@@ -57,6 +56,7 @@ process PUBLISH_REPORTS {
         path(all_sites_fas),
         path(baits_bed),
         path(genome_dict),
+        path(samplesheet_csv),
         path(genome_fasta_fai),
         path(genome_gff3),
         path(genome_gtf),
