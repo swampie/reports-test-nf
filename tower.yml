@@ -8,6 +8,12 @@ reports:
       display: "Pdf report"
       mimeType: "application/pdf"
 
+   results/SPAdesHybrid-CAPES_S7-binDepths.heatmap.png:
+      display: "SPAdesHybrid-CAPES_S7-binDepths.heatmap.png"
+      mimeType: "image/png"
+
+
+      ## In FUTURE
    results/nfcore_chipseq110_samplesheet_test_full_6cols.csv:
       display: "nfcore_chipseq110_samplesheet_test_full_6cols"
       mimeType: "text/csv"
@@ -69,10 +75,6 @@ reports:
       mimeType: "text"
 
    results/proteome.fasta:
-      display: ""
-      mimeType: "text"
-
-   results/SPAdesHybrid-CAPES_S7-binDepths.heatmap.png:
       display: ""
       mimeType: "text"
 
