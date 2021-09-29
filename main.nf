@@ -33,8 +33,7 @@ process PUBLISH_REPORTS {
     path(test_vcf_gz_tbi) from Channel.of("${projectDir}/resources/test.vcf.gz.tbi")
     path(test2_targets_tsv_gz) from Channel.of("${projectDir}/resources/test2.targets.tsv.gz")
     path(transcriptome_paf) from Channel.of("${projectDir}/resources/transcriptome.paf")
-
-
+    path(report_pdf) from Channel.of("${projectDir}/resources/report.pdf")
 
 
 
@@ -54,6 +53,7 @@ process PUBLISH_REPORTS {
         path(transposed_tsv),
         path(transposed_txt),
         path(genome_fasta),
+        path(report_pdf),
         path(all_sites_fas),
         path(baits_bed),
         path(genome_dict),
