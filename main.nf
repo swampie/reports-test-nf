@@ -1,5 +1,7 @@
+params.outdir = "results"
+
 process PUBLISH_REPORTS {
-    publishDir "results", mode: 'copy'
+    publishDir "${params.outdir}", mode: 'copy'
 
     input:
     path(multiqc_html) from Channel.of("${projectDir}/resources/MultiQC Report.html")
