@@ -1,10 +1,29 @@
 params.outdir = "results"
+params.delay = 300
 
-process PUBLISH_REPORTS {
+process MULTIQC {
     publishDir "${params.outdir}", mode: 'copy'
 
     input:
-    path(multiqc_html) from Channel.of("${projectDir}/resources/MultiQC Report.html")
+    path(multiqc_html) from Channel.value("${projectDir}/resources/MultiQC Report.html")
+    val(step) from Channel.from(1..4)
+
+    output:
+    path("step_*/*.html") into reports
+
+    script:
+    """
+    echo "Copying MultiQC reports"
+    mkdir step_$step
+    cp $multiqc_html step_$step/
+    """
+}
+
+process REPORTS {
+    publishDir "${params.outdir}", mode: 'copy'
+
+    input:
+    val multiqc_reports from reports.collect()
     path(bin_depths_summary_tsv) from Channel.of("${projectDir}/resources/bin_depths_summary.tsv")
     path(bin_summary_tsv) from Channel.of("${projectDir}/resources/bin_summary.tsv")
     path(CAPES_S7_log) from Channel.of("${projectDir}/resources/CAPES_S7.log")
@@ -40,9 +59,7 @@ process PUBLISH_REPORTS {
 
 
     output:
-
-    tuple path(multiqc_html),
-        path(bin_depths_summary_tsv),
+    tuple path(bin_depths_summary_tsv),
         path(bin_summary_tsv),
         path(CAPES_S7_log),
         path(execution_trace_txt),
@@ -78,6 +95,8 @@ process PUBLISH_REPORTS {
 
     script:
     """
+    echo "Sleeping ${params.delay} seconds"
+    sleep ${params.delay}
     echo "Copying all resource files to results directory for testing!"
     """
 

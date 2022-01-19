@@ -1,136 +1,73 @@
 reports:
 
-   results/MultiQC Report.html:
+   MultiQC Report.html:
       display: "MultiQC Report"
-      mimeType: "text/html"
 
-   results/report.pdf:
+   report.pdf:
       display: "Pdf report"
-      mimeType: "application/pdf"
 
-   results/SPAdesHybrid-CAPES_S7-binDepths.heatmap.png:
+   SPAdesHybrid-CAPES_S7-binDepths.heatmap.png:
       display: "SPAdesHybrid-CAPES_S7-binDepths.heatmap.png"
-      mimeType: "image/png"
 
-   results/taxonomy.krona.html:
-      display: ""
-      mimeType: "text/html"
+   taxonomy.krona.html:
+      display: "Taxonomy"
 
-
-      ## In FUTURE
-   results/nfcore_chipseq110_samplesheet_test_full_6cols.csv:
+   nfcore_chipseq110_samplesheet_test_full_6cols.csv:
       display: "nfcore_chipseq110_samplesheet_test_full_6cols"
-      mimeType: "text/csv"
 
-   results/all_sites.fas:
-      display: ""
-      mimeType: "text"
+   all_sites.fas:
+      display: "FAS file"
 
-   results/baits.bed:
-      display: ""
-      mimeType: "text"
+   baits.bed:
+      display: "BED file"
 
-   results/bin_depths_summary.tsv:
-      display: ""
-      mimeType: "text"
+   bin_depths_summary.tsv:
+      display: "TSV file"
 
-   results/bin_summary.tsv:
-      display: ""
-      mimeType: "text"
+   CAPES_S7.log:
+      display: "Log file"
 
-   results/CAPES_S7.log:
-      display: ""
-      mimeType: "text"
+   execution_trace_2021-07-29_07-12-59.txt:
+      display: "TXT file"
 
-   results/execution_trace_2021-07-29_07-12-59.txt:
-      display: ""
-      mimeType: "text"
+   genome.dict:
+      display: "DICT file"
 
-   results/genome.dict:
-      display: ""
-      mimeType: "text"
+   genome.fasta:
+      display: "FASTA file"
 
-   results/genome.fasta:
-      display: ""
-      mimeType: "text"
+   genome.fasta.fai:
+      display: "FASTA Index"
 
-   results/genome.fasta.fai:
-      display: ""
-      mimeType: "text"
+   genome.gff3:
+      display: "GFF3 file"
 
-   results/genome.gff3:
-      display: ""
-      mimeType: "text"
+   genome.gtf:
+      display: "GTF file"
 
-   results/genome.gtf:
-      display: ""
-      mimeType: "text"
+   pipeline_dag_2021-07-29_07-12-59.svg:
+      display: "SVG file"
 
-   results/genome.sizes:
-      display: ""
-      mimeType: "text"
+   test.bedgraph:
+      display: "BED Graph file"
 
-   results/kraken2_report.txt:
-      display: ""
-      mimeType: "text"
+   test.bigwig:
+      display: "BIGWIG file"
 
-   results/pipeline_dag_2021-07-29_07-12-59.svg:
-      display: ""
-      mimeType: "text"
+   test.paired_end.bam:
+      display: "BAM file"
 
-   results/proteome.fasta:
-      display: ""
-      mimeType: "text"
+   test.vcf:
+      display: "VCF file"
 
+   test.vcf.gz.tbi:
+      display: "VCF Index"
 
-   results/test.baserecalibrator.table:
-      display: ""
-      mimeType: "text"
+   test2.targets.tsv.gz:
+      display: "TSV.GZ file"
 
-   results/test.bed:
-      display: ""
-      mimeType: "text"
+   transcriptome.paf:
+      display: "PAF file"
 
-   results/test.bedgraph:
-      display: ""
-      mimeType: "text"
-
-   results/test.bigwig:
-      display: ""
-      mimeType: "text"
-
-   results/test.paired_end.bam:
-      display: ""
-      mimeType: "text"
-
-   results/test.single_end.bam.readlist.txt:
-      display: ""
-      mimeType: "text"
-
-   results/test.vcf:
-      display: ""
-      mimeType: "text"
-
-   results/test.vcf.gz.tbi:
-      display: ""
-      mimeType: "text"
-
-   results/test2.targets.tsv.gz:
-      display: ""
-      mimeType: "text"
-
-   results/transcriptome.paf:
-      display: ""
-      mimeType: "text"
-
-   results/transposed_report.tex:
-      display: ""
-      mimeType: "text"
-
-   results/transposed_report.tsv:
-      display: ""
-      mimeType: "text"
-
-   results/transposed_report.txt:
-      display: ""
-      mimeType: "text"
+   transposed_report.tex:
+      display: "TEX file"
