@@ -1,5 +1,5 @@
 params.outdir = "results"
-params.delay = 300
+params.delay = 5
 
 process MULTIQC {
     publishDir "${params.outdir}", mode: 'copy'
