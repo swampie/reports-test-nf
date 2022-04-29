@@ -1,7 +1,7 @@
 nextflow.enable.dsl = 1
 
 params.outdir = "results"
-params.delay = 120
+params.delay = 5
 
 process MULTIQC {
     publishDir "${params.outdir}", mode: 'copy'
