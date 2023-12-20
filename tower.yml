@@ -75,5 +75,5 @@ reports:
    transposed_report.tex:
       display: "TEX file"
    
-   reports.json:
+   report.json:
       display: "JSON file"

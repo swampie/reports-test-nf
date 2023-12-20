@@ -58,7 +58,7 @@ process REPORTS {
     path(transcriptome_paf)
     path(report_pdf)
     path(samplesheet_csv)
-    path(reports_json)
+    path(report_json)
 
 
     output:
@@ -94,7 +94,7 @@ process REPORTS {
         path(test_vcf_gz_tbi),
         path(test2_targets_tsv_gz),
         path(transcriptome_paf),
-        path(reports_json)
+        path(report_json)
 
 
 
@@ -144,6 +144,6 @@ workflow {
         Channel.of("${projectDir}/resources/transcriptome.paf"),
         Channel.of("${projectDir}/resources/report.pdf"),
         Channel.of("${projectDir}/resources/nfcore_chipseq110_samplesheet_test_full_6cols.csv"),
-        Channel.of("${projectDir}/resources/reports.json")
+        Channel.of("${projectDir}/resources/report.json")
     )
 }
