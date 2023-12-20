@@ -143,7 +143,7 @@ workflow {
         Channel.of("${projectDir}/resources/test2.targets.tsv.gz"),
         Channel.of("${projectDir}/resources/transcriptome.paf"),
         Channel.of("${projectDir}/resources/report.pdf"),
-        Channel.of("${projectDir}/resources/nfcore_chipseq110_samplesheet_test_full_6cols.csv")
+        Channel.of("${projectDir}/resources/nfcore_chipseq110_samplesheet_test_full_6cols.csv"),
         Channel.of("${projectDir}/resources/reports.json")
     )
 }
