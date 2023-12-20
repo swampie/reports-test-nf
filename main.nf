@@ -93,7 +93,7 @@ process REPORTS {
         path(test_vcf),
         path(test_vcf_gz_tbi),
         path(test2_targets_tsv_gz),
-        path(transcriptome_paf)
+        path(transcriptome_paf),
         path(reports_json)
 
 
