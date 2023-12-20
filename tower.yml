@@ -76,4 +76,4 @@ reports:
       display: "TEX file"
    
    reports.json:
-      diplay: "JSON file"
+      display: "JSON file"
