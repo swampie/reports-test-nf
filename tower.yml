@@ -3,6 +3,10 @@ reports:
    MultiQC Report.html:
       display: "MultiQC Report"
 
+   pdb_file.pdb:
+      display: "Pdb"
+      mimeType: "chemical/x-pdb"
+
    report.pdf:
       display: "Pdf report"
 

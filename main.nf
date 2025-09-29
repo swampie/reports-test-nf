@@ -26,6 +26,7 @@ process REPORTS {
 
     input:
     val multiqc_reports
+    path(pdb_file)
     path(bin_depths_summary_tsv)
     path(bin_summary_tsv)
     path(CAPES_S7_log)
@@ -62,7 +63,8 @@ process REPORTS {
 
 
     output:
-    tuple path(bin_depths_summary_tsv),
+    tuple path(pdb_file)
+        path(bin_depths_summary_tsv),
         path(bin_summary_tsv),
         path(CAPES_S7_log),
         path(execution_trace_txt),
@@ -112,6 +114,7 @@ workflow {
     
     REPORTS(
         MULTIQC.out,
+        Channel.of("${projectDir}/resources/AF-Q5VSL9-F1-model_v4.pdb"),
         Channel.of("${projectDir}/resources/bin_depths_summary.tsv"),
         Channel.of("${projectDir}/resources/bin_summary.tsv"),
         Channel.of("${projectDir}/resources/CAPES_S7.log"),
