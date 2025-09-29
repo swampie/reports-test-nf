@@ -3,6 +3,6 @@ reports:
    MultiQC Report.html:
       display: "MultiQC Report"
 
-   pdb_file.pdb:
-      display: "Pdb"
+   AF-Q5VSL9-F1-model_v4.pdb:
+      display: "Pdb file"
       mimeType: "chemical/x-pdb"
